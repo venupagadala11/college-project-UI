@@ -1,0 +1,53 @@
+.second-page
+{
+    background-image: url("../images/bg-image.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 100vh;
+}
+
+.danger
+{
+    text-align: center;
+    color: rgb(36, 32, 32);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.danger-desc
+{
+    font-size: 75px;
+    color:red;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.purity-img
+{
+    width: 75px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.not-safe
+{
+    position: fixed;
+    top: 81px;
+    right: 50px;
+    border-radius: 50%;
+}
+.dirty-water
+{
+    position: fixed;
+    top: 81px;
+    left: 30px;
+    border-radius: 50%;
+}
+img
+{
+    border-radius: 50%;
+    width: 225px;
+}

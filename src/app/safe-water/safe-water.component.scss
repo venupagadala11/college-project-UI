@@ -1,0 +1,52 @@
+.third-page
+{
+    background-image: url("../images/safe.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 100vh;
+}
+
+.safe
+{
+    text-align: center;
+    color: green;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.safe-desc
+{
+    color: rgb(15, 245, 15);
+    font-size: 75px;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.purity-img
+{
+    width: 75px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.glass
+{
+    position: fixed;
+    top: 81px;
+    right: 30px;
+    border-radius: 50%;
+}
+.thumbs
+{
+    position: fixed;
+    top: 81px;
+    left: 30px;
+    border-radius: 50%;
+}
+img{
+    border-radius: 50%;
+}

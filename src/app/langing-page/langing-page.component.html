@@ -1,0 +1,72 @@
+
+<div class="container">
+    <strong class="heading">Water Portability Prediction</strong>
+    <div class="form-details">
+        <form [formGroup]="portability" (ngSubmit)="handleFormSubmit()" class="form">
+            <div class="inputs">
+                <label for="ph">PH Value:</label>
+                <input type="number" id="ph" name="name" placeholder="Enter Ph value" formControlName="ph">
+            </div>
+            <span class="alert-red" *ngIf="ph && ph.errors?.['required'] && ph.touched">
+                Enter PH value
+                </span>
+              <span class="alert-red" *ngIf="ph && ph.errors?.['max']">
+                PH value should not exceed 14
+              </span>
+              <span class="alert-red" *ngIf="ph && ph.errors?.['min']">
+                PH value should not be less than 0
+              </span>
+
+
+            <div class="inputs">
+                <label for="hardness">Hardness Value:</label>
+                <input type="text" id="hardness" name="Hardness" placeholder="Enter Hardness value" formControlName="hardness">
+            </div>
+            <span class="alert-red" *ngIf="hardness && hardness.errors?.['required'] && hardness.touched">
+                Enter hardness value
+              </span>
+
+            <div class="inputs">
+                <label for="solids">Solids Value:</label>
+                <input id="text" name="solids" placeholder="Enter solids value" formControlName="solids">
+            </div>
+            <span class="alert-red" *ngIf="solids && solids.errors?.['required'] && solids.touched">
+                Enter solids value
+              </span>
+
+
+            <div class="inputs">
+                <label for="sulphate">Sulphate Value:</label>
+                <input type="text" id="sulphate" name="sulphate" placeholder="Enter Sulphate value" formControlName="sulphate">
+            </div>
+            <span class="alert-red" *ngIf="sulphate && sulphate.errors?.['required'] && sulphate.touched">
+                Enter sulphate value
+              </span>
+
+
+            <div class="inputs">
+                <label for="chloramines">Chloramines Value:</label>
+                <input type="text" id="chloramines" name="chloramines" placeholder="Enter Chloramines value" formControlName="chloramies">
+            </div>
+            <span class="alert-red" *ngIf="chloramies && chloramies.errors?.['required'] && chloramies.touched">
+                Enter chloramines value
+              </span>
+
+
+            <div class="inputs">
+                <label for="trihalomethasis">Trihalomethasis Value:</label>
+                <input type="text" id="trihalomethasis" name="trihalomethasis" placeholder="Enter trihalomethasis value" formControlName="trihalomethasis">
+            </div>
+            <span class="alert-red" *ngIf="trihalomethasis && trihalomethasis.errors?.['required'] && trihalomethasis.touched">
+                Enter trihalomethasis value
+              </span>
+
+            
+            <div class="buttons">
+                <button type="reset" id="submit-button">Reset</button>
+                <button id="reset-button" type="submit" [disabled]="portability.invalid">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</div>
